@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="website_Design">
+	<meta name="product" content="website_Design by N180894">
+	<meta name="keywords" content="website,real time exapmle,website using html,website designing">
+	<meta http-equiv="cache-control" content="cache-control:max-age=31536000,public">
+	<title>WEBSITE by N180894</title>
+	<link rel="icon" href="logo.png" type="text/image">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+
+<body>
+    <div class="main">
+	<header id="main-header">
+        <hgroup>
+        	<img src="meghana.jpeg" height="80px" width="80px" class="img1">
+            <h3 style="display: inline;" class="head">WEBSITE</h3>
+            <b id="eq">&equiv;</b>
+        </hgroup>
+    </header><br>
+    
+        <div id="nav-links" style="background-color: rgb(120, 120, 120);">
+            <ul>
+                <li><a href="main.html" >Home<span>&#127968;</span></a></li>
+                <li>
+                    <a href="#" >Exam<span class="darrow">&#9997;&#9660;</span></a>
+                    <ul>
+                        <li ><a href="Login.html" target="show">Login</a></li>
+                        <li ><a href="Register.html" target="show">Register</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Branch<span class="darrow">&#128295;&#9660;</span></a>
+                    
+                    <ul>
+                        <li>
+                            <a href="#">CSE<span class="rarrow">&#9654;</span></a>
+                            
+                            <ul>
+                                <li><a href="student.html" target="show">Students</a></li>
+                                <li><a href="faculty.html" target="show">Faculty</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">ECE</a></li>
+                        <li><a href="#">MECH</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" target="show" >About<span>&#128105;</span></a></li>
+                <li><a href="contact.html" target="show" >Contact<span>&#128222;</span></a></li>
+            </ul>
+        </div>
+    
+    
+        <div id="vertical-nav-links" style="display:none;cursor: pointer;">
+            <ul>
+                <li><a href="main.html" >Home<span>&#127968;</span></a></li>
+                <li>
+                    <a href="#" >Exam<span class="darrow">&#9997;&#9660;</span></a>
+                    <ul>
+                        <li ><a href="Login.html" target="show">Login</a></li>
+                        <li ><a href="Register.html" target="show">Register</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Branch<span class="darrow">&#128295;&#9660;</span></a>
+                    
+                    <ul>
+                        <li>
+                            <a href="#">CSE<span class="rarrow">&#9654;</span></a>
+                            
+                            <ul>
+                                <li><a href="student.html" target="show">Students</a></li>
+                                <li><a href="faculty.html" target="show">Faculty</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">ECE</a></li>
+                        <li><a href="#">MECH</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" target="show" >About<span>&#128105;</span></a></li>
+                <li><a href="contact.html" target="show" >Contact<span>&#128222;</span></a></li>
+            </ul>
+        </div>
+        <div class="middle">
+        <iframe src="left.html" id="i1"></iframe>
+        <iframe src="slide.html" id="i2" name="show"></iframe>
+        <iframe src="right.html" id="i3"></iframe>
+    </div>
+    <footer id="main-footer">
+        <p>copy right &copy;2022 Website by #PM.REDDYMEGHANA</p>
+
+    </footer>
+    <script type="text/javascript">
+        var sidenav=document.getElementById('vertical-nav-links').style;
+        var eq=document.getElementById('eq');
+        function toggle() {
+            if(sidenav.display=='none'){
+                console.log(sidenav.display);
+                sidenav.display='block';
+            }
+            else{
+                console.log(sidenav.display);
+                sidenav.display='none';
+            }
+        }
+        eq.addEventListener('click',toggle);
+    </script>
+</div>
+</body>
+</html>
