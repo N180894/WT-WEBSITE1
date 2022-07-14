@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Student</title>
+	<link rel="stylesheet" type="text/css" href="cse.css">
+</head>
+<body>
+    <div class="student">
+        <form action="student.php" onclick="return validate()">
+            <label>STUDENT ID</label><br>  
+            <input type="text" name="id" id="studentId" placeholder="(Ex:N18----)"> &nbsp;<p id="error" style="display: inline;"></p><br>
+            <input type="submit" value="submit" name="submit">
+        </form>
+    </div>
+    <script>
+        var pattren=/^(n|N)[1][8]\d{4}$/;
+        var student=document.getElementById('studentId');
+        var error=document.getElementById('error');
+        function validate(){
+            if(pattren.test(student.value)==false){
+                student.style.border='2px solid red';
+                error.innerHTML='invalid id';
+                return false;
+            }
+            else{
+                error.innerText=''
+                student.style.border='none';
+            }
+            return true
+        }
+    </script>
+</body>
+</html>
