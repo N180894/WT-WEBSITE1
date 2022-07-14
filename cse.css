@@ -1,0 +1,43 @@
+body{
+    background-color: white;
+}
+.student{
+	position: absolute;
+	top:25%;
+	left:20%;
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+    border: 3px solid navy;
+    background-color: navy;
+    box-shadow: 0px 0px 30px 0px black;
+    color: white;
+}
+p{
+    color: red;
+}
+form{
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    line-height: 30px;
+}
+input[type='submit']{
+    background-color: white;
+    font-weight: bold;
+    color: navy;
+    margin-top: 50px;
+    margin-left: 240px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+}
+input{
+    height: 25px;
+    font-size:medium;
+}
+input:focus{
+    color: navy;
+    border: none;
+}
