@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ValidForm</title>
+    <style type="text/css">
+        /*div{
+            background-blend-mode: screen;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 700px;
+        }*/
+        #u1{
+            height: 35px;
+            width: 120px;
+        }
+        #u2{
+            height: 35px;
+            width: 120px;
+        }
+    </style>
+    <script type="text/javascript" src="form.js"></script>
+</head>
+<body style="background-color: rgb(210, 210, 210);">
+    <center>
+        <div>
+            <form action="/ba.php" method="post" onsubmit="return validate()">
+                <u><h1 style="font-family: Comic Sans MS;">Registration Form</h1></u>
+                <table cellpadding="10" cellspacing="5">
+
+                    <tr>
+                        <td style="font-family: Segoe Print;font-size: 17px;">First Name:</td>
+                        <td>
+                            <b style="color:red">*</b><input type="text" id="fn">
+                            <label id="l1" style="color: red; visibility: hidden;">Enter Valid Name!!!</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: Segoe Print;font-size: 17px;">Middle Name:</td>
+                        <td>
+                            &nbsp;&nbsp;<input type="text" id="mn">
+                            <label id="l2" style="color: red; visibility: hidden;">Don't enter Special Charecters!!!</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="font-family: Segoe Print;font-size: 17px;">Last Name:</td>
+                        <td>
+                            <b style="color:red">*</b><input type="text" id="ln">
+                            <label id="l3" style="color: red; visibility: hidden;">Enter Valid Name!!!</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: Segoe Print;font-size: 17px;">Full Name:</td>
+                        <td>&nbsp;&nbsp;<input type="text" id="full" value="FullName" readonly disabled></td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: Segoe Print;font-size: 17px;">Select your Country:</td>
+                        <td>&nbsp;
+                            <select id="c">
+                                <option id="c1"><i>India</i></option>
+                                <option id="c2"><i>USA</i></option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: Segoe Print;font-size: 17px;">Mobile Number:</td>
+                        <td>
+                            <b style="color:red">*</b><input type="text" id="mobile">
+                            <label id="l4" style="color: red; visibility: hidden;">Invalid Mobile Number!!!</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: Segoe Print;font-size: 17px;"> Password:</td>
+                        <td><b style="color:red">*</b><input type="password" name="p" id="password" minlength="6" required></td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: Segoe Print;font-size: 17px;">Select atleast TWO hobbies:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="hobbies">&nbsp;<i>Reading</i><input type="checkbox" id="a1">
+                            <i>Watching Movies</i><input type="checkbox" id="a2">
+                            <i>Games</i><input type="checkbox" id="a3"><br/><br/>&nbsp;
+                            <i>Drawing</i><input type="checkbox" id="a4">
+                            <i>Singing</i><input type="checkbox" id="a5">
+                            <i>Dancing</i><input type="checkbox" id="a6"><br>&nbsp;
+                            <label id="l5" style="color: red; visibility: hidden;">Select Atleast TWO hobbies..!!</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: Segoe Print;font-size: 17px;">Email Address:</td>
+                        <td>
+                            <b style="color:red">*</b><input type="Email" id="mail">
+                            <label id="l6" style="color: red; visibility: hidden;">Enter Valid Email-Address!!!</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: Segoe Print;font-size: 17px;">Upload Photo(passportSize):</td>
+                        <td>&nbsp;<input type="file" accept="image/*"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: Segoe Print;font-size: 17px;">Date Of Birth:</td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: Segoe Print;font-size: 17px;">Address:</td>
+                        <td><textarea rows="3" cols="20"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox"><small style="color:blue;font-family:Verdana;">I have read and accepted the terms and conditions of the company</small>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset" value="RESET" id="u1" onclick="return confirm()"></td>
+                        <td><input type="submit" name="s" id="u2" value="REGISTER"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
