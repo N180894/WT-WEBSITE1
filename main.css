@@ -1,0 +1,204 @@
+.main{
+    
+    width: 100%;
+}
+.middle{
+    width: 100%;
+}
+hgroup{
+    background-color:rgb(180,180,180);
+    border-radius: 10px;
+    box-shadow: 8px 10px 10px black;
+    border: 1px solid;
+    /*color: white;*/
+}
+.img1{
+    padding: 10px;
+    border-radius: 100%;
+}
+
+#eq{
+    position: absolute;
+    right: 0px;
+    font-size: 80px;
+    margin-top: 8px;
+    margin-right: 40px;
+    right: 10px;
+    cursor: pointer;
+
+}
+.darrow{
+    font-size: 14px;
+}
+.rarrow{
+    font-size: 12px;
+}
+#main-footer{
+    background-color: rgb(100,150, 100);
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+/*#nav-links{
+    background-color: rgb(120, 120, 120);*/
+}
+
+#nav-links ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 30px;
+    color: rgb(180,180,180);
+    
+}
+#nav-links ul li{
+    position: relative;
+    list-style-type: none;
+    display: inline-block;
+
+
+}
+#nav-links ul li a{
+    display: block;
+    padding: 0 15px;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 20px;
+    color: black;
+}
+
+#nav-links ul ul{
+    position: absolute;
+    top: 40px;
+    display: none;
+}
+#nav-links ul li:hover > ul{
+    z-index: 1;
+    background-color: white;
+    display: block;
+
+}
+#nav-links ul li a:hover{
+    box-shadow: 5px 5px 10px black;
+
+}
+#nav-links ul ul ul li{
+    position: relative;
+    background-color: white;
+    display: block;
+    top: -40px;
+    left: 80px;
+}
+#vertical-nav-links{
+    background-color: rgb(210, 210, 210);
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+    top: 120px;
+    border: 1px solid black;
+    height: 495px;
+    width: 150px;
+
+}
+#vertical-nav-links ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 10px;
+}
+#vertical-nav-links ul li{
+    position: relative;
+    list-style-type: none;
+    display: block;
+}
+#vertical-nav-links ul li a{
+
+    display: block;
+    padding: 0 15px;
+    text-decoration: none;
+    line-height: 45px;
+    font-size: 20px;
+    color: black;
+}
+#vertical-nav-links ul li a:hover{
+    box-shadow: 5px 5px 10px black;
+}
+#vertical-nav-links ul ul{
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    display: none;
+}
+#vertical-nav-links ul li:hover > ul{
+    display: block;
+
+}
+#vertical-nav-links ul ul ul li{
+    background-color: peachpuff;
+    position: relative;
+    top: 0px;
+    right: -30px;
+}
+#i1,#i3{
+    position: relative;
+    height: 70vh;
+    width: 24%;
+}
+#i2{
+    position: relative;
+    height: 70vh;
+    width: 50%;
+}
+    .head{
+        position: relative;
+        top: -35px;
+    }
+@media screen and (min-width: 1015px){
+    .head{
+        left: 35%;
+        font-size: 40px;
+    }
+    #nav-links ul{
+        word-spacing: 110px;
+    }
+    #i3{
+        width: 23%;
+    }
+}
+@media screen and (max-width: 1015px),(min-width: 2622px){
+    .head{
+        position: relative;
+        top: -35px;
+        left: 30%;
+        font-size: 30px;
+    }
+    #nav-links ul{
+        word-spacing: 40px;
+    }
+    #i3{
+        width: 19%;
+    }
+}
+@media screen and (max-width: 780px){
+    .head{
+        position: relative;
+        top: -35px;
+        left: 25%;
+        font-size: 20px;
+    }
+    #nav-links{
+        display: none;
+    }
+    #i3{
+        width: 20%;
+    }
+    /*#vertical-nav-links{
+        visibility: visible;
+    }*/
+}
+
