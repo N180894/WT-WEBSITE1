@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Login Form</title>
+    <style type="text/css">
+        .div{
+            background-color: peachpuff;
+            border-style: 1px solid;
+            width: 500px;
+            height: 300px;
+            padding: 5px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 30px 0px black;
+            transform: translate(80px,70px);
+        }
+        h1{
+            text-align: center;
+        }
+        .b1{
+            margin-left: 200px;
+            height: 40px;
+            width: 100px;
+            background-color: green;
+            border-radius: 10px;
+            position: relative;
+            top: 50px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+        .i1{
+            height: 30px;
+            width: 300px;
+            border-radius: 10px;
+            margin-left: 50px;
+        }
+        .i2{
+            height: 30px;
+            width: 300px;
+            border-radius: 10px;
+            margin-left: 50px;
+        }
+        #t1 a{
+            margin-left: 150px;
+            font-size: 18px;
+            text-decoration: none;
+            position: relative;
+            left: 80px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <main class="div">
+        <h1>Sign In</h1>
+        <form action="/ba.php" method="post" onclick="return validate()">
+            <input type="text" placeholder="Email" class="i1" id="user" />
+            <label id="l1" style="color: red; visibility:hidden;">InValid Email ID!!</label><br><br>
+            <input type="password" placeholder="password" class="i2" required /><br>
+            <small id="t1"><a href="#">Forget password</a></small><br>
+            <input type="submit" value="submit" name="submit" class="b1" />  
+        </form>
+    </main>
+    <script>
+        
+        function validate(){
+            var e=document.getElementById("user").value;
+            var mRegEx=/^[a-zA-Z0-9]+(\.[_a-zA-Z0-9-]+)*@[a-zA-Z]+(\.[a-zA-Z]+)*(\.[a-z]{2,3})$/;
+            if(mRegEx.test(e)==false){
+                document.getElementById("user").style.border="2px solid red";
+                document.getElementById("l1").style.visibility="visible";
+                setTimeout(function () {
+                    document.getElementById("l1").style.display = "none";
+                }, 5 * 1000);
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
